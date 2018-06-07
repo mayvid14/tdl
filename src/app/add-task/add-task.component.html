@@ -1,0 +1,24 @@
+<mat-card fxFlex="60%" fxFlexOffset="20%">
+  <mat-card-title>Add Task</mat-card-title>
+  <mat-card-content>
+    <form>
+      <mat-form-field fxFill>
+        <input matInput placeholder="Title">
+      </mat-form-field>
+
+      <mat-form-field fxFill>
+        <mat-select placeholder="Priority">
+          <mat-option value="High">High</mat-option>
+          <mat-option value="Medium">Medium</mat-option>
+          <mat-option value="Low">Low</mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+      <mat-form-field fxFill>
+        <textarea matInput placeholder="Description"></textarea>
+      </mat-form-field>
+
+      <button mat-raised-button>Add</button>
+    </form>
+  </mat-card-content>
+</mat-card>

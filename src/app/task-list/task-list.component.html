@@ -1,0 +1,10 @@
+<mat-card fxFlex="100%" *ngIf="tasks?.length <= 0">
+  No Tasks yet!
+</mat-card>
+
+<mat-nav-list>
+    <mat-list-item *ngFor="let task of tasks">
+       <a matLine [routerLink]="['/',task.id]">{{ task.title }}</a>
+       <button mat-icon-button></button>
+    </mat-list-item>
+  </mat-nav-list>
